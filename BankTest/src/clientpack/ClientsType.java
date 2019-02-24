@@ -3,15 +3,19 @@ package clientpack;
 import java.util.ArrayList;
 
 public abstract class ClientsType extends MainTest implements clientFace {
-//public interface Regulars {
-//	}
 
 public static int CType;
 protected int ID;
-private	ArrayList<String> name;
+private	ClientList clientsNames;
 private double deposit;
 protected double withdraw;
 protected double amount;
+
+public ClientsType() {
+     clientsNames = new ClientList() {
+	};
+
+}
 
 public enum CType {Regulars, Golds, Platinums;
 	
@@ -24,7 +28,7 @@ public int getID() {
 }public abstract void setName(String name);
 
 public ArrayList<String> getName() {
-	return name;
+	return getName();
 }
 
 public double getDeposit() {
