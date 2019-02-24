@@ -10,23 +10,23 @@ private	ClientList clientsNames;
 private double deposit;
 protected double withdraw;
 protected double amount;
+private String name;
 
 public ClientsType() {
-     clientsNames = new ClientList() {
-	};
+     setClientsNames(new ClientList());
 
 }
 
-public enum CType {Regulars, Golds, Platinums;
-	
-}
+public enum CType {Regulars, Golds, Platinums}
 
 public void setID(int ID) {
+	this.ID=ID;
 }
 
 public int getID() {
 	return ID;
 }public void setName(String name) {
+	this.name = name;
 }
 
 public ArrayList<String> getName() {
@@ -38,6 +38,7 @@ public double getDeposit() {
 }
 
 public void setDeposit(double deposit) {
+	this.deposit=deposit;
 }
 
 
@@ -46,6 +47,7 @@ public double getWithdraw() {
 }
 
 public void setWithdraw(double withdraw) {
+	this.withdraw=withdraw;
 }
 
 
@@ -54,5 +56,14 @@ public double getAmount() {
 }
 
 public void setAmount(double amount) {
+	this.amount=amount;
+}
+
+public ClientList getClientsNames() {
+	return clientsNames;
+}
+
+public void setClientsNames(ClientList clientsNames) {
+	this.clientsNames = clientsNames;
 }
 }

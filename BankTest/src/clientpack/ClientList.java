@@ -2,7 +2,7 @@ package clientpack;
 
 import java.util.ArrayList;
 
-public abstract class ClientList {
+public  class ClientList {
 
     private ArrayList<String> names;
   //creating a parameterized constructor
