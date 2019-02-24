@@ -10,7 +10,7 @@ private	ClientList clientsNames;
 private double deposit;
 protected double withdraw;
 protected double amount;
-private String name;
+
 
 public ClientsType() {
      setClientsNames(new ClientList());
@@ -25,9 +25,8 @@ public void setID(int ID) {
 
 public int getID() {
 	return ID;
-}public void setName(String name) {
-	this.name = name;
 }
+
 
 public ArrayList<String> getName() {
 	return getName();
