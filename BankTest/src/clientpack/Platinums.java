@@ -33,34 +33,26 @@ public class Platinums extends ClientsType {
 	System.out.println("Your amount : "+ amount);
 	}
 		
-		@Override
-		public void setID(int ID) {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public void setName(String name) {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public void setDeposit(double deposit) {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public void setWithdraw(double withdraw) {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public void setAmount(double amount) {
-			// TODO Auto-generated method stub
-			
-		}
-		
-		public double getWithdraw() {
-			return withdraw;
-		}
-
+	@Override
+	public void setID(int ID) {
+		this.ID=ID;
 	}
+
+	@Override
+	public void setDeposit(double deposit) {
+		this.deposit=deposit;
+	}
+	@Override
+	public void setWithdraw(double withdraw) {
+		this.withdraw=withdraw;
+	}
+	@Override
+	public void setAmount(double amount) {
+		this.amount=amount;
+	}
+	
+	public double getWithdraw() {
+		return withdraw;
+	}
+	
+}

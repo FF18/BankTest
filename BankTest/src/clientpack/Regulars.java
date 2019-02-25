@@ -9,7 +9,6 @@ public class Regulars extends ClientsType {
 	 protected double withdraw;
 	 protected double amount;
 	private Scanner scan;
-
 	
  public Regulars() {
 	 if(withdraw>5000 && withdraw<50000) {
@@ -35,28 +34,20 @@ System.out.println("Your amount : "+ amount);
 	
 	@Override
 	public void setID(int ID) {
-		// TODO Auto-generated method stub
-		
+		this.ID=ID;
 	}
-	@Override
-	public void setName(String name) {
-		// TODO Auto-generated method stub
-		
-	}
+
 	@Override
 	public void setDeposit(double deposit) {
-		// TODO Auto-generated method stub
-		
+		this.deposit=deposit;
 	}
 	@Override
 	public void setWithdraw(double withdraw) {
-		// TODO Auto-generated method stub
-		
+		this.withdraw=withdraw;
 	}
 	@Override
 	public void setAmount(double amount) {
-		// TODO Auto-generated method stub
-		
+		this.amount=amount;
 	}
 	
 	public double getWithdraw() {

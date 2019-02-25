@@ -1,7 +1,5 @@
 package clientpack;
 
-import java.util.ArrayList;
-
 public  class ClientsType extends MainTest implements clientFace {
 
 public static int CType;
@@ -11,10 +9,8 @@ private double deposit;
 protected double withdraw;
 protected double amount;
 
-
 public ClientsType() {
      setClientsNames(new ClientList());
-
 }
 
 public enum CType {Regulars, Golds, Platinums}
@@ -27,11 +23,6 @@ public int getID() {
 	return ID;
 }
 
-
-public ArrayList<String> getName() {
-	return getName();
-}
-
 public double getDeposit() {
 	return deposit;
 }
@@ -40,7 +31,6 @@ public void setDeposit(double deposit) {
 	this.deposit=deposit;
 }
 
-
 public double getWithdraw() {
 	return withdraw;
 }
@@ -48,7 +38,6 @@ public double getWithdraw() {
 public void setWithdraw(double withdraw) {
 	this.withdraw=withdraw;
 }
-
 
 public double getAmount() {
 	return amount;

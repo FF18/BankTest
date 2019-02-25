@@ -1,9 +1,18 @@
 package accountpack;
 
-//import clientpack.ClientsType;
 
-public abstract class AccountAdd  extends AccountReports {
-//extends AccountsBank 
-private abstract add account();
-private remove account();
+public class AccountAdd extends AccountReports {
+	private	AccountList accountNumber;
+	
+	public AccountAdd() {
+	     setAccountNumber(new AccountList());
+	}
+
+	public void setAccountNumber(AccountList accountNumber) {
+		this.accountNumber=accountNumber;
+	}
+
+	public AccountList getAccountNumber() {
+		return accountNumber;
+	}
 }
